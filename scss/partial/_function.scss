@@ -1,0 +1,27 @@
+// dodajemy sb biblioteke
+/*Tworzymy funkcje (w module functions), która zwraca wynik odpowiedniego działania arytmetycznego rozpoznawanego po stronie funkcji na podstawie trzeciego argumentu podawanego przy wywołaniu funkcji.
+m - oznacza mnożenie
+dz - dzielenie
+o - odejmowanie
+d - dodawanie*/
+@use "sass:math";
+@import "_variable.scss";
+
+@function funk($num1, $num2, $mode: default) {
+  @if $mode == d {
+    @return (($num1 + $num2) * 1px);
+  } @else if $mode ==m {
+    @return (($num1 * $num2) * 1px);
+  } @else if $mode == dz {
+    @return (math.div($num1, $num2) * 1px);
+  } @else if $mode == o {
+    @return ($num1 - $num2) * 1px;
+  } @else {
+    @error "Bledna wartosci";
+  }
+}
+p{
+  width: funk(150, 2, o);
+  height: funk(150,2, m);
+  color: $color3;
+}
