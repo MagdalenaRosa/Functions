@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*Tworzymy funkcje (w module functions), która zwraca wynik odpowiedniego działania arytmetycznego rozpoznawanego po stronie funkcji na podstawie trzeciego argumentu podawanego przy wywołaniu funkcji.
+m - oznacza mnożenie
+dz - dzielenie
+o - odejmowanie
+d - dodawanie*/
+p {
+  width: 148px;
+  height: 300px;
+  color: rgb(5, 94, 132);
+}
+
+/*# sourceMappingURL=style.css.map */
